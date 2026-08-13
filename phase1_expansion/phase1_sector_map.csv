@@ -1,0 +1,57 @@
+ticker,name,sector
+^NSEI,NIFTY 50 Index,Index
+HDFCBANK.NS,HDFC Bank,Banking
+ICICIBANK.NS,ICICI Bank,Banking
+SBIN.NS,SBI,Banking
+KOTAKBANK.NS,Kotak Bank,Banking
+AXISBANK.NS,Axis Bank,Banking
+INDUSINDBK.NS,IndusInd Bank,Banking
+TCS.NS,TCS,IT
+INFY.NS,Infosys,IT
+WIPRO.NS,Wipro,IT
+HCLTECH.NS,HCL Tech,IT
+TECHM.NS,Tech Mahindra,IT
+RELIANCE.NS,Reliance,Energy
+ONGC.NS,ONGC,Energy
+BPCL.NS,BPCL,Energy
+COALINDIA.NS,Coal India,Energy
+NTPC.NS,NTPC,Energy
+POWERGRID.NS,Power Grid,Energy
+TMPV.NS,Tata Motors,Auto
+MARUTI.NS,Maruti Suzuki,Auto
+EICHERMOT.NS,Eicher Motors,Auto
+HEROMOTOCO.NS,Hero MotoCorp,Auto
+BAJAJ-AUTO.NS,Bajaj Auto,Auto
+M&M.NS,Mahindra & Mahindra,Auto
+SUNPHARMA.NS,Sun Pharma,Pharma
+DRREDDY.NS,Dr Reddy's,Pharma
+CIPLA.NS,Cipla,Pharma
+DIVISLAB.NS,Divi's Labs,Pharma
+APOLLOHOSP.NS,Apollo Hospitals,Pharma
+HINDUNILVR.NS,HUL,FMCG
+ITC.NS,ITC,FMCG
+NESTLEIND.NS,Nestle India,FMCG
+BRITANNIA.NS,Britannia,FMCG
+TATACONSUM.NS,Tata Consumer,FMCG
+BAJFINANCE.NS,Bajaj Finance,Finance_NBFC
+BAJAJFINSV.NS,Bajaj Finserv,Finance_NBFC
+SBILIFE.NS,SBI Life,Finance_NBFC
+HDFCLIFE.NS,HDFC Life,Finance_NBFC
+JSWSTEEL.NS,JSW Steel,Materials
+TATASTEEL.NS,Tata Steel,Materials
+HINDALCO.NS,Hindalco,Materials
+ULTRACEMCO.NS,UltraTech Cement,Materials
+GRASIM.NS,Grasim,Materials
+SHREECEM.NS,Shree Cement,Materials
+ASIANPAINT.NS,Asian Paints,Consumer_Other
+TITAN.NS,Titan,Consumer_Other
+UPL.NS,UPL,Consumer_Other
+LT.NS,Larsen & Toubro,Conglomerate_Infra
+ADANIENT.NS,Adani Enterprises,Conglomerate_Infra
+ADANIPORTS.NS,Adani Ports,Conglomerate_Infra
+BHARTIARTL.NS,Bharti Airtel,Conglomerate_Infra
+^NSEBANK,Nifty Bank Index,Index
+^CNXIT,Nifty IT Index,Index
+^CNXAUTO,Nifty Auto Index,Index
+^CNXPHARMA,Nifty Pharma Index,Index
+^CNXFMCG,Nifty FMCG Index,Index

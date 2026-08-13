@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+config.py
+*.env
+.env
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+
+# 419MB fine-tuned FinBERT checkpoint — documented as not used in
+# production (see phase0_week4/README.md); too large for git anyway
+phase0_week4/finetuned_finbert/

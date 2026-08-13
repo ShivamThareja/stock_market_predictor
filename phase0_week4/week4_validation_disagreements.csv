@@ -1,0 +1,22 @@
+headline,source,topic,published_at,sentiment_label,finbert_label,finbert_score,human_label
+"Will Nifty, Sensex extend losses on Monday? Middle East tension, Q1 results, 3 other factors to drive mood next week",The Times of India,NIFTY,2026-08-09 03:50:58+00:00,negative,neutral,0.6669,negative
+Donald Trump reiterates preference for lower interest rates days before Fed holds steady,Crypto Briefing,US_Fed,2026-08-07 14:30:54+00:00,negative,neutral,0.5274,negative
+"US Economy Unexpectedly Sheds 23,000 Jobs in July as Unemployment Rate Dips to 4.1%, Fed Bets Shift",Ibtimes.com.au,US_Fed,2026-08-07 13:27:03+00:00,positive,negative,0.9665,positive
+"US jobs report misses big, and investors are rethinking everything about rate hikes",Crypto Briefing,US_Fed,2026-08-07 12:05:24+00:00,positive,negative,0.7319,positive
+"US Jobs Report in Focus as Middle East Tensions and Corporate News Shape Markets: Dow Jones, S&P, Nasdaq, Wall Street Futures",Advfn.com,US_Fed,2026-08-07 08:35:36+00:00,positive,neutral,0.7556,positive
+"Indian bonds buckle under oil spike, fresh debt sale",The Times of India,RBI,2026-08-07 05:51:51+00:00,negative,positive,0.5766,negative
+"Asian shares pause for US jobs, oil extends gains on Mideast risk",BusinessLine,US_Fed,2026-08-07 03:02:05+00:00,negative,positive,0.5005,negative
+"Sensex, Nifty on track for muted start amid rising oil prices; Q1 earnings, US-Iran war in focus",BusinessLine,NIFTY,2026-08-07 02:35:50+00:00,negative,positive,0.8363,negative
+Japan's April yen intervention set daily record as pressure persists,CNA,US_Fed,2026-08-07 00:02:00+00:00,negative,positive,0.4998,negative
+"Indian equities lag South Korea, Japan and US markets: New study reveals why long-term investors should not worry",Livemint,NIFTY,2026-08-06 12:34:06+00:00,negative,neutral,0.7982,negative
+When is your home loan EMI increasing? RBI rate hike calls pushed back after dovish pause,The Times of India,RBI,2026-08-06 07:12:15+00:00,negative,neutral,0.3963,negative
+FMCG price hikes could rewrite India’s inflation story: Report,The Times of India,RBI,2026-08-06 05:50:06+00:00,negative,neutral,0.7295,negative
+"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",Moneycontrol,RBI,2026-08-06 05:09:32+00:00,negative,positive,0.6892,negative
+"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",BusinessLine,RBI,2026-08-06 04:07:07+00:00,negative,positive,0.75,negative
+"Markets open flat as RBI holds rates, global cues stay mixed",BusinessLine,RBI,2026-08-06 04:05:05+00:00,neutral,negative,0.5718,neutral
+"India's economic growth may moderate in H2FY27, accelerate to 7.2% in FY28: Report",The Times of India,RBI,2026-08-06 03:42:50+00:00,neutral,positive,0.7791,neutral
+Lone warriors! How two mid-tier tech stocks rewarded investors in Rs 10 lakh crore IT crash this year,The Times of India,Indian_IT,2026-08-06 03:23:02+00:00,negative,neutral,0.6465,negative
+Best of BS Opinion: Inflation projections demand monetary tightening,Business Standard,RBI,2026-08-06 00:45:07+00:00,negative,neutral,0.9252,negative
+SEBI rules out immediate review of new closing auction session,BusinessLine,NIFTY,2026-08-05 15:50:38+00:00,negative,neutral,0.7456,negative
+"Private banks top FCNR (B) deposit drive led by ICICI, HSBC; SBI No. 1 PSB",BusinessLine,Indian_Banking,2026-08-03 16:13:29+00:00,negative,neutral,0.5016,negative
+"High dividend yield stocks: Vedanta, Coal India among 15 largecap stocks with high dividend yields. Do you own any?",Economictimes.com,Indian_IT,2026-08-03 03:17:50+00:00,positive,neutral,0.9306,positive

@@ -1,0 +1,13 @@
+# Dependencies for the deployed dashboard only (final_dashboard/dashboard.py).
+# Streamlit Community Cloud reads this file from the repo root.
+# NOT a full-project requirements file — the data-collection phases
+# (news fetching, FinBERT, price downloads) need extra packages
+# (torch, transformers, yfinance, apscheduler, matplotlib, seaborn)
+# that the dashboard itself never imports, so they're deliberately
+# left out to keep the Cloud build small and fast.
+streamlit==1.50.0
+plotly==6.9.0
+pandas==2.3.3
+numpy==2.0.2
+scikit-learn==1.6.1
+xgboost==2.1.4
