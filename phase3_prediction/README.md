@@ -22,7 +22,7 @@ its own sentiment). Phase 3:
    `UP` / `DOWN` / `FLAT` with a ±0.3% deadband (mirrors Phase 0/1's own
    0.5% noise-filter convention — small moves aren't a signal the news
    caused).
-3. **Adds two feature families that don't depend on news volume being
+3. **Adds feature families that don't depend on news volume being
    large**, because a few weeks of backfilled headlines is not much data:
    - Price momentum going into the news day (prior 1-day, prior 3-day
      return) — a standard technical signal, available for every row.
@@ -30,6 +30,12 @@ its own sentiment). Phase 3:
      — captures the project's own "cross-timezone overnight news moves
      the whole market" idea (US Fed / Global Markets headlines route to
      `^NSEI`, not individual stocks) as a feature single-stock rows can use.
+   - Market-wide macro momentum (`feature_engineering.py`'s
+     `MARKET_SERIES`): NIFTY's own prior-day return, S&P 500 prior-day
+     return (the literal overnight US->India signal), crude oil, USD/INR,
+     and India VIX prior-day change — fetched by
+     `phase1_expansion/phase1_macro_data.py`, attached to every row the
+     same way market sentiment is. Plus day-of-week.
 4. **Trains XGBoost** (`multi:softprob`, 3 classes) on a **time-based**
    split — train on the earliest ~80% of days, test on the most recent
    ~20%. Not a random shuffle: a random split lets rows from the same day
@@ -51,43 +57,59 @@ Requires `phase2_routing/phase2_routed_events.csv` (Phase 2),
 
 The news database this was first built on had **6 articles from a single
 weekend** — nowhere near enough to train anything. Before building Phase 3
-for real, I backfilled ~29 days of real headlines (NewsAPI's free-tier
+for real, backfilled ~29 days of real headlines (NewsAPI's free-tier
 limit is ~1 month back) across the same 6 topics Phase 0/2/3 use, ran
-Week 4's FinBERT labeling on all of them (343 articles total), re-ran
-Phase 2 routing (973 headline→stock rows), and refreshed Phase 1's price
-data through today so next-session returns exist for the new dates.
+Week 4's FinBERT labeling on all of them, ran Phase 2 routing, and
+refreshed Phase 1's price data so next-session returns exist for the
+new dates.
 
-That produced **230 labeled (ticker, day) rows across 28 days** — the
-real dataset this model trains on. Sentiment-only features (headline
-count, % pos/neg/neutral, confidence, net sentiment) got:
+**Round 1** (sentiment + momentum features only, 230 labeled rows / 28
+days): sentiment-only features scored 33.3% — dead even with the
+majority-class baseline. Adding price momentum + same-day index
+sentiment moved that to **42.2% (+8.9 pts over baseline)**.
 
-- **33.3% test accuracy — dead even with the majority-class baseline**
-  (always predicting `UP`). No lift at all.
+**Round 2** — a later push specifically to improve accuracy added three
+things: `week4_label_rules.py`'s targeted sentiment corrections (24 of
+386 headlines fixed — RBI hold/hike/cut and rally/fall language FinBERT
+was getting backwards), the macro/momentum features described above, and
+more accumulated news days (29 by this point). Result on **244 labeled
+rows across 29 days**:
 
-Adding the price-momentum + market-sentiment features moved that to:
+- **43.5% test accuracy — a +10.9 point lift over the 32.6% baseline**,
+  on 46 test rows across 6 days.
 
-- **42.2% test accuracy — a +8.9 point lift over baseline.**
+Also attempted: fine-tuning FinBERT on the larger, rule-corrected
+dataset (386 examples, well past the 200+ threshold Week 4 originally
+flagged as needed). Evaluated honestly against the untouched Week 2
+human labels (not a self-referential check against FinBERT's own prior
+output) — **it tied zero-shot exactly, 69.6% vs 69.6%.** No improvement.
+Full writeup in `phase0_week4/README.md`.
 
-That lift is real (the momentum/market-sentiment features do carry
-information a 3-class model can use), but it's measured on **45 test
-rows across 6 days** — small enough that this number will swing a lot
-run to run as more data comes in. Read it as "the pipeline works
-end-to-end and the features aren't pure noise," not as a trustworthy
-production accuracy figure. I stopped tuning here on purpose — squeezing
-more lift out of a 6-day test slice risks fitting to that specific slice
-rather than finding a real pattern.
+**Net movement: 42.2% → 43.5%, a real but modest +1.3 point gain** from
+meaningfully more engineering effort (label corrections + 5 new macro
+features). Both numbers are measured on ~45 test rows across ~6 days —
+close enough together that some of this difference could just be
+different test-slice noise rather than a genuine improvement. Neither
+number should be read as a stable, production-grade figure yet.
 
-## Why not push accuracy higher right now
+## Why 55%+ isn't happening yet, and what would actually get there
 
-Same conclusion Week 4 reached with FinBERT fine-tuning on 69 examples:
-**this is a data-size ceiling, not a modeling problem.** 28 days, most of
-it concentrated in a handful of heavily-covered topics (RBI/Banking, US
-Fed → whole index), isn't enough to separate real signal from noise for
-a 3-class problem. The lever that actually moves this number is time:
-let `phase0_week3/week3_pipeline.py` keep running (hourly, as designed)
-so real trading days accumulate, then re-run Phase 2 routing and this
-script. The time-based split means every re-run tests on genuinely new
-days — that's the real test of whether this is learning anything.
+Same conclusion Week 4 reached with FinBERT fine-tuning, now confirmed a
+second time on the fine-tuning retry above: **this is a data-size
+ceiling, not a modeling or feature-selection problem.** 29 days,
+concentrated in a handful of heavily-covered topics (RBI/Banking, US Fed
+→ whole index), just isn't enough to separate real signal from noise for
+a 3-class problem — no amount of additional features or label-cleanup
+effort changes that ceiling much, which is exactly what Round 2 shows:
+real, legitimate improvements (rule-corrected labels, 5 new macro
+features) moved the number by scarcely more than a point. The lever that
+actually moves this is time: let `phase0_week3/week3_pipeline.py` keep
+running (hourly cron, see root README) so real trading days accumulate
+across varied market conditions, then periodically re-run Phase 2
+routing and this script. The time-based split means every re-run tests
+on genuinely new days — that's the real test of whether this is learning
+anything, and it's the only lever left that's actually likely to close
+a meaningful chunk of the gap to 55%.
 
 ## Common errors
 

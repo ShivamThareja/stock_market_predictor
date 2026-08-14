@@ -1,6 +1,6 @@
 article_id,headline,topic,source,published_at,sentiment_label,sentiment_confidence,ticker,company_name,sector,matched_via
 1,"Will Nifty, Sensex extend losses on Monday? Middle East tension, Q1 results, 3 other factors to drive mood next week",NIFTY,The Times of India,2026-08-09T03:50:58Z,neutral,0.6669,^NSEI,NIFTY 50 Index,Index,topic_macro
-2,"Fed may hold rates steady after weak July jobs report, cooling inflation",US_Fed,Crypto Briefing,2026-08-08T17:32:20Z,negative,0.9237,^NSEI,NIFTY 50 Index,Index,topic_macro
+2,"Fed may hold rates steady after weak July jobs report, cooling inflation",US_Fed,Crypto Briefing,2026-08-08T17:32:20Z,neutral,0.9237,^NSEI,NIFTY 50 Index,Index,topic_macro
 3,Bitcoin’s first institutional bear market is starting to take shape and draining liquidity,US_Fed,CryptoSlate,2026-08-08T15:05:54Z,negative,0.8644,^NSEI,NIFTY 50 Index,Index,topic_macro
 4,"Dear SanDisk Stock Fans, Mark Your Calendars for a Fresh Catalyst on August 13",Global_Markets,Barchart.com,2026-08-08T15:15:02Z,neutral,0.9251,^NSEI,NIFTY 50 Index,Index,topic_macro
 5,UK Stocks Could Prove More Resilient Than U.S. Equities if AI Boom Unravels,Global_Markets,Advfn.com,2026-08-08T13:00:00Z,positive,0.9284,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -71,24 +71,24 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 17,FMCG price hikes could rewrite India’s inflation story: Report,RBI,The Times of India,2026-08-06T05:50:06Z,neutral,0.7295,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 17,FMCG price hikes could rewrite India’s inflation story: Report,RBI,The Times of India,2026-08-06T05:50:06Z,neutral,0.7295,AXISBANK.NS,Axis Bank,Banking,topic_macro
 17,FMCG price hikes could rewrite India’s inflation story: Report,RBI,The Times of India,2026-08-06T05:50:06Z,neutral,0.7295,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,ICICIBANK.NS,ICICI Bank,Banking,company_name
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,SBIN.NS,SBI,Banking,topic_macro
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,AXISBANK.NS,Axis Bank,Banking,topic_macro
-18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,positive,0.6892,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,ICICIBANK.NS,ICICI Bank,Banking,company_name
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,SBIN.NS,SBI,Banking,topic_macro
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,AXISBANK.NS,Axis Bank,Banking,topic_macro
+18,"RBI rate hikes may begin in December if oil stays high, ICICI Bank says",RBI,Moneycontrol,2026-08-06T05:09:32Z,negative,0.6892,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,SBIN.NS,SBI,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,AXISBANK.NS,Axis Bank,Banking,topic_macro
 19,"India's economic growth may moderate in H2 FY27, accelerate to 7.2% in FY28: Report",RBI,BusinessLine,2026-08-06T04:07:07Z,positive,0.75,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,SBIN.NS,SBI,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,AXISBANK.NS,Axis Bank,Banking,topic_macro
-20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,negative,0.5718,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,SBIN.NS,SBI,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,AXISBANK.NS,Axis Bank,Banking,topic_macro
+20,"Markets open flat as RBI holds rates, global cues stay mixed",RBI,BusinessLine,2026-08-06T04:05:05Z,neutral,0.5718,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 21,"India's economic growth may moderate in H2FY27, accelerate to 7.2% in FY28: Report",RBI,The Times of India,2026-08-06T03:42:50Z,positive,0.7791,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
 21,"India's economic growth may moderate in H2FY27, accelerate to 7.2% in FY28: Report",RBI,The Times of India,2026-08-06T03:42:50Z,positive,0.7791,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
 21,"India's economic growth may moderate in H2FY27, accelerate to 7.2% in FY28: Report",RBI,The Times of India,2026-08-06T03:42:50Z,positive,0.7791,SBIN.NS,SBI,Banking,topic_macro
@@ -233,12 +233,12 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 44,"Changes in EBLR & MCLR framework, interest rate charging mechanism and how reset dates are decided- RBI proposal",RBI,The Times of India,2026-08-05T06:04:34Z,neutral,0.946,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 44,"Changes in EBLR & MCLR framework, interest rate charging mechanism and how reset dates are decided- RBI proposal",RBI,The Times of India,2026-08-05T06:04:34Z,neutral,0.946,AXISBANK.NS,Axis Bank,Banking,topic_macro
 44,"Changes in EBLR & MCLR framework, interest rate charging mechanism and how reset dates are decided- RBI proposal",RBI,The Times of India,2026-08-05T06:04:34Z,neutral,0.946,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,SBIN.NS,SBI,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,AXISBANK.NS,Axis Bank,Banking,topic_macro
-45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,neutral,0.807,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,SBIN.NS,SBI,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,AXISBANK.NS,Axis Bank,Banking,topic_macro
+45,"Sensex surges over 450 points, but Nifty stays flat. How long can this divergence last?",RBI,The Times of India,2026-08-05T05:48:19Z,positive,0.807,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 46,RBI MPC Meeting 2026: Central bank flags a threat for Indian agriculture warming up in the Pacific,RBI,The Times of India,2026-08-05T05:38:56Z,positive,0.7406,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
 46,RBI MPC Meeting 2026: Central bank flags a threat for Indian agriculture warming up in the Pacific,RBI,The Times of India,2026-08-05T05:38:56Z,positive,0.7406,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
 46,RBI MPC Meeting 2026: Central bank flags a threat for Indian agriculture warming up in the Pacific,RBI,The Times of India,2026-08-05T05:38:56Z,positive,0.7406,SBIN.NS,SBI,Banking,topic_macro
@@ -420,36 +420,36 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 75,Weak rupee: Import dependence of exports is a soft spot,RBI,BusinessLine,2026-08-02T17:15:43Z,negative,0.9514,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 75,Weak rupee: Import dependence of exports is a soft spot,RBI,BusinessLine,2026-08-02T17:15:43Z,negative,0.9514,AXISBANK.NS,Axis Bank,Banking,topic_macro
 75,Weak rupee: Import dependence of exports is a soft spot,RBI,BusinessLine,2026-08-02T17:15:43Z,negative,0.9514,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,SBIN.NS,SBI,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,AXISBANK.NS,Axis Bank,Banking,topic_macro
-76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,negative,0.8963,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,SBIN.NS,SBI,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,AXISBANK.NS,Axis Bank,Banking,topic_macro
+76,"RBI MPC likely to stay on hold amid inflation risks, global uncertainty",RBI,BusinessLine,2026-08-02T15:26:42Z,neutral,0.8963,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,SBIN.NS,SBI,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,AXISBANK.NS,Axis Bank,Banking,topic_macro
 77,"RBI Likely To Keep Repo Rate Unchanged In August, Economists Expect Hawkish Pause Amid Inflation Risks",RBI,Free Press Journal,2026-08-02T09:11:50Z,negative,0.9158,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,SBIN.NS,SBI,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,AXISBANK.NS,Axis Bank,Banking,topic_macro
-78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,negative,0.4776,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,SBIN.NS,SBI,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,AXISBANK.NS,Axis Bank,Banking,topic_macro
-79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,negative,0.5983,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,SBIN.NS,SBI,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,AXISBANK.NS,Axis Bank,Banking,topic_macro
-80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,neutral,0.7897,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,SBIN.NS,SBI,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,AXISBANK.NS,Axis Bank,Banking,topic_macro
+78,"RBI likely to hold rates in August, retain hawkish tone: Economists",RBI,BusinessLine,2026-08-02T08:53:45Z,neutral,0.4776,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,SBIN.NS,SBI,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,AXISBANK.NS,Axis Bank,Banking,topic_macro
+79,"RBI likely to hold rates in August, maintain hawkish tone as inflation risks loom: Economists",RBI,The Times of India,2026-08-02T08:42:12Z,neutral,0.5983,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,SBIN.NS,SBI,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,AXISBANK.NS,Axis Bank,Banking,topic_macro
+80,"Will Nifty, Sensex extend gains on Monday? 6 factors which will drive D-Street action this week",RBI,The Times of India,2026-08-02T03:39:37Z,positive,0.7897,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 81,"RBI likely to hold repo rate at 5.25%, market to focus on policy guidance: Nuvama",RBI,The Times of India,2026-08-01T06:55:04Z,neutral,0.9082,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
 81,"RBI likely to hold repo rate at 5.25%, market to focus on policy guidance: Nuvama",RBI,The Times of India,2026-08-01T06:55:04Z,neutral,0.9082,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
 81,"RBI likely to hold repo rate at 5.25%, market to focus on policy guidance: Nuvama",RBI,The Times of India,2026-08-01T06:55:04Z,neutral,0.9082,SBIN.NS,SBI,Banking,topic_macro
@@ -612,7 +612,7 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 143,"Market wrap: Shriram Finance, Grasim, TCS among top gainers and losers on Nifty and Sensex on Wednesday",NIFTY,The Times of India,2026-08-05T11:02:38Z,negative,0.7473,GRASIM.NS,Grasim,Materials,company_name
 143,"Market wrap: Shriram Finance, Grasim, TCS among top gainers and losers on Nifty and Sensex on Wednesday",NIFTY,The Times of India,2026-08-05T11:02:38Z,negative,0.7473,TCS.NS,TCS,IT,company_name
 143,"Market wrap: Shriram Finance, Grasim, TCS among top gainers and losers on Nifty and Sensex on Wednesday",NIFTY,The Times of India,2026-08-05T11:02:38Z,negative,0.7473,^NSEI,NIFTY 50 Index,Index,topic_macro
-144,"Sensex rises 152 points, Nifty closes above 24,600 as market trims gains. What lies ahead?",NIFTY,The Times of India,2026-08-05T10:25:21Z,neutral,0.7055,^NSEI,NIFTY 50 Index,Index,topic_macro
+144,"Sensex rises 152 points, Nifty closes above 24,600 as market trims gains. What lies ahead?",NIFTY,The Times of India,2026-08-05T10:25:21Z,positive,0.7055,^NSEI,NIFTY 50 Index,Index,topic_macro
 145,Marico eyes strong FY27 volume growth after best Q1 in five years,NIFTY,Livemint,2026-08-05T09:35:20Z,positive,0.9529,^NSEI,NIFTY 50 Index,Index,topic_macro
 146,"Why is market rising today? Sensex jumps over 400 pts, Nifty above 24,600. 8 factors behind D-St rebound",NIFTY,The Times of India,2026-08-05T04:03:51Z,positive,0.8783,^NSEI,NIFTY 50 Index,Index,topic_macro
 147,When Nifty Jumped 200 Points In ONE MINUTE,NIFTY,Rediff.com,2026-08-05T03:52:33Z,neutral,0.804,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -624,7 +624,7 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 150,Ahead of Market: 10 things that will decide stock market action on Wednesday,NIFTY,The Times of India,2026-08-04T15:44:08Z,neutral,0.9361,^NSEI,NIFTY 50 Index,Index,topic_macro
 151,"Top Business & Market Headlines Today — BL Morning Report, August 5, 2026",NIFTY,BusinessLine,2026-08-04T15:28:36Z,neutral,0.9259,^NSEI,NIFTY 50 Index,Index,topic_macro
 152,Markets dip as profit-taking and oil prices weigh ahead of RBI decision,NIFTY,BusinessLine,2026-08-04T13:16:29Z,negative,0.9368,^NSEI,NIFTY 50 Index,Index,topic_macro
-153,Sectoral and thematic index funds return up to 22% in 6 months: What retail investors must know before taking the plunge,NIFTY,Livemint,2026-08-04T11:48:54Z,neutral,0.8683,^NSEI,NIFTY 50 Index,Index,topic_macro
+153,Sectoral and thematic index funds return up to 22% in 6 months: What retail investors must know before taking the plunge,NIFTY,Livemint,2026-08-04T11:48:54Z,negative,0.8683,^NSEI,NIFTY 50 Index,Index,topic_macro
 154,India to raise up to $3.3 billion by selling stake in country’s largest life insurer at 10% discount,NIFTY,CNBC,2026-08-04T02:16:13Z,positive,0.5543,^NSEI,NIFTY 50 Index,Index,topic_macro
 155,Promoter ownership climbs to two-year high despite persistent FII selling,NIFTY,The Times of India,2026-08-04T00:42:56Z,positive,0.9341,^NSEI,NIFTY 50 Index,Index,topic_macro
 156,"If the earnings don't come through, markets will struggle: Paul Wilson",NIFTY,The Times of India,2026-08-04T00:07:46Z,neutral,0.6129,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -753,12 +753,12 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 199,"Sensex today | Stock Market Highlights: Sensex closed at 77,185.43; Nifty 50 was to 24,078.50",Indian_Banking,BusinessLine,2026-07-15T10:58:29Z,neutral,0.6273,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
 199,"Sensex today | Stock Market Highlights: Sensex closed at 77,185.43; Nifty 50 was to 24,078.50",Indian_Banking,BusinessLine,2026-07-15T10:58:29Z,neutral,0.6273,AXISBANK.NS,Axis Bank,Banking,topic_macro
 199,"Sensex today | Stock Market Highlights: Sensex closed at 77,185.43; Nifty 50 was to 24,078.50",Indian_Banking,BusinessLine,2026-07-15T10:58:29Z,neutral,0.6273,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,HDFCBANK.NS,HDFC Bank,Banking,company_name
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,SBIN.NS,SBI,Banking,company_name
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,AXISBANK.NS,Axis Bank,Banking,topic_macro
-200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,neutral,0.8058,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,HDFCBANK.NS,HDFC Bank,Banking,company_name
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,SBIN.NS,SBI,Banking,company_name
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,AXISBANK.NS,Axis Bank,Banking,topic_macro
+200,"HDFC Bank, SBI, other stocks jump up to 2%; Nifty Bank gains 560 points. What lies ahead?",Indian_Banking,The Times of India,2026-07-15T07:41:59Z,positive,0.8058,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
 201,"Retail investors make Rs 18,000 crore bold contra bet on 6 falling bluechip stocks. Will it pay off?",Indian_IT,The Times of India,2026-08-11T04:24:35Z,neutral,0.7523,TCS.NS,TCS,IT,topic_macro
 201,"Retail investors make Rs 18,000 crore bold contra bet on 6 falling bluechip stocks. Will it pay off?",Indian_IT,The Times of India,2026-08-11T04:24:35Z,neutral,0.7523,INFY.NS,Infosys,IT,topic_macro
 201,"Retail investors make Rs 18,000 crore bold contra bet on 6 falling bluechip stocks. Will it pay off?",Indian_IT,The Times of India,2026-08-11T04:24:35Z,neutral,0.7523,WIPRO.NS,Wipro,IT,topic_macro
@@ -860,8 +860,8 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 230,Earnings Drive Both Bull & Bear Markets,US_Fed,Realinvestmentadvice.com,2026-08-10T09:19:00Z,neutral,0.7648,^NSEI,NIFTY 50 Index,Index,topic_macro
 231,Nikkei Rises as AI Buying Returns and BOJ Rate-Hike Bets Build,US_Fed,Newsonjapan.com,2026-08-10T07:50:57Z,negative,0.4592,^NSEI,NIFTY 50 Index,Index,topic_macro
 232,US Stock Market: Weak July jobs data dents expectations for September Fed rate hike,US_Fed,The Times of India,2026-08-10T04:57:18Z,negative,0.9692,^NSEI,NIFTY 50 Index,Index,topic_macro
-233,BOJ signals potential faster rate hikes amid rising inflation risks,US_Fed,Crypto Briefing,2026-08-10T01:05:23Z,positive,0.835,^NSEI,NIFTY 50 Index,Index,topic_macro
-234,Fed likely to hold rates steady after July jobs report: Westpac economist,US_Fed,Crypto Briefing,2026-08-10T00:51:07Z,negative,0.5531,^NSEI,NIFTY 50 Index,Index,topic_macro
+233,BOJ signals potential faster rate hikes amid rising inflation risks,US_Fed,Crypto Briefing,2026-08-10T01:05:23Z,negative,0.835,^NSEI,NIFTY 50 Index,Index,topic_macro
+234,Fed likely to hold rates steady after July jobs report: Westpac economist,US_Fed,Crypto Briefing,2026-08-10T00:51:07Z,neutral,0.5531,^NSEI,NIFTY 50 Index,Index,topic_macro
 235,"US Job Market Stalled In July As Employers Cut 23,000 Jobs, Delivering Political Setback To Trump",US_Fed,WKMG News 6 & ClickOrlando,2026-08-10T00:00:00Z,negative,0.9709,^NSEI,NIFTY 50 Index,Index,topic_macro
 236,"Trump Says 'Crypto Is a Big Deal, People Are Paying With Bitcoin'",US_Fed,Yahoo Entertainment,2026-08-09T21:32:03Z,neutral,0.7245,^NSEI,NIFTY 50 Index,Index,topic_macro
 237,Donald Trump renews effort to fire Federal Reserve governor Lisa Cook,US_Fed,Al Jazeera English,2026-08-07T23:40:16Z,negative,0.8208,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -895,16 +895,16 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 265,How market participants read RBI's order of priority has a bearing on how well monetary policy works,US_Fed,Livemint,2026-08-06T05:46:52Z,neutral,0.9182,^NSEI,NIFTY 50 Index,Index,topic_macro
 266,"Fed’s Daly Supported Rate Decision, Warns of Inflation Risks",US_Fed,Financial Post,2026-08-06T02:27:49Z,negative,0.6954,^NSEI,NIFTY 50 Index,Index,topic_macro
 267,Fed’s Daly supports holding rates steady amid mixed FOMC signals,US_Fed,Crypto Briefing,2026-08-06T01:08:42Z,positive,0.6744,^NSEI,NIFTY 50 Index,Index,topic_macro
-268,Gold Extends Gain as Hormuz Deal Progress Lowers Rate-Hike Odds,US_Fed,Financial Post,2026-08-06T00:56:47Z,positive,0.8825,^NSEI,NIFTY 50 Index,Index,topic_macro
-269,Fed Governor Cook says she's 'prepared to act' on rate hike to address inflation,US_Fed,CNBC,2026-08-05T20:36:16Z,positive,0.8015,^NSEI,NIFTY 50 Index,Index,topic_macro
+268,Gold Extends Gain as Hormuz Deal Progress Lowers Rate-Hike Odds,US_Fed,Financial Post,2026-08-06T00:56:47Z,negative,0.8825,^NSEI,NIFTY 50 Index,Index,topic_macro
+269,Fed Governor Cook says she's 'prepared to act' on rate hike to address inflation,US_Fed,CNBC,2026-08-05T20:36:16Z,negative,0.8015,^NSEI,NIFTY 50 Index,Index,topic_macro
 270,"SmartStop Self Storage REIT, Inc. Reports Second Quarter 2026 Results",US_Fed,Financial Post,2026-08-05T20:21:58Z,neutral,0.8436,^NSEI,NIFTY 50 Index,Index,topic_macro
-271,Fed’s Cook signals potential rate hike if disinflation trend falters,US_Fed,Crypto Briefing,2026-08-05T20:09:53Z,positive,0.4272,^NSEI,NIFTY 50 Index,Index,topic_macro
+271,Fed’s Cook signals potential rate hike if disinflation trend falters,US_Fed,Crypto Briefing,2026-08-05T20:09:53Z,negative,0.4272,^NSEI,NIFTY 50 Index,Index,topic_macro
 272,OraSure Announces Second Quarter 2026 Financial Results,US_Fed,GlobeNewswire,2026-08-05T20:05:00Z,neutral,0.901,^NSEI,NIFTY 50 Index,Index,topic_macro
 273,"Mortgage retreat, still near one-year high",US_Fed,Yahoo Entertainment,2026-08-05T20:00:00Z,negative,0.881,^NSEI,NIFTY 50 Index,Index,topic_macro
 274,Fed's Kashkari says central bank should raise interest rates now to avoid 'entrenched inflation problem',US_Fed,Fox Business,2026-08-05T19:03:11Z,positive,0.5997,^NSEI,NIFTY 50 Index,Index,topic_macro
 275,"US Treasury retains debt issuance guidance through 2027, shifting more weight to short-term bills",US_Fed,Crypto Briefing,2026-08-05T16:44:25Z,neutral,0.8298,^NSEI,NIFTY 50 Index,Index,topic_macro
 276,XRP Price Forecast: Risk of a Drop Below $1 Rise as ETF Inflows Dry Up,US_Fed,Yahoo Entertainment,2026-08-05T14:28:59Z,negative,0.9505,^NSEI,NIFTY 50 Index,Index,topic_macro
-277,Minneapolis Fed's Kashkari calls for gradual rate hikes in 2026,US_Fed,Quartz India,2026-08-05T13:39:49Z,positive,0.6756,^NSEI,NIFTY 50 Index,Index,topic_macro
+277,Minneapolis Fed's Kashkari calls for gradual rate hikes in 2026,US_Fed,Quartz India,2026-08-05T13:39:49Z,negative,0.6756,^NSEI,NIFTY 50 Index,Index,topic_macro
 278,The refinance ‘Seniority Tax’: How a flawed system and aggressive lenders leave older homeowners overpaying for their mortgage,US_Fed,Yahoo Entertainment,2026-08-05T13:00:00Z,negative,0.506,^NSEI,NIFTY 50 Index,Index,topic_macro
 279,Fed’s Kashkari not pushing for dramatic rate hike,US_Fed,Crypto Briefing,2026-08-05T12:15:22Z,neutral,0.6959,^NSEI,NIFTY 50 Index,Index,topic_macro
 280,VERSABANK FORM S-4 REGISTRATION STATEMENT FOR PROPOSED REORGANIZATION DECLARED EFFECTIVE BY SEC,US_Fed,PRNewswire,2026-08-05T11:00:00Z,neutral,0.9388,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -935,7 +935,7 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 305,Demand for stock downside protection falls to lowest level since Trump’s tariff capitulation,Global_Markets,Crypto Briefing,2026-08-10T15:54:23Z,negative,0.9699,^NSEI,NIFTY 50 Index,Index,topic_macro
 306,Santoli: Stocks return to their winning ways. But was July's brief pain enough to satisfy the market gods?,Global_Markets,CNBC,2026-08-10T10:43:38Z,neutral,0.4467,^NSEI,NIFTY 50 Index,Index,topic_macro
 307,Arm Stock Is Off 39% From Its High. Why This Could Be the Best Time to Buy.,Global_Markets,Barchart.com,2026-08-09T14:15:02Z,negative,0.8816,^NSEI,NIFTY 50 Index,Index,topic_macro
-308,L&C Bio’s Human-Fat Injection Could Fix “Ozempic Face”: Will Gains Hold?,Global_Markets,BeInCrypto,2026-08-06T07:53:17Z,neutral,0.7281,^NSEI,NIFTY 50 Index,Index,topic_macro
+308,L&C Bio’s Human-Fat Injection Could Fix “Ozempic Face”: Will Gains Hold?,Global_Markets,BeInCrypto,2026-08-06T07:53:17Z,positive,0.7281,^NSEI,NIFTY 50 Index,Index,topic_macro
 309,Asia’s wild AI stock swings ignite and destroy dreams of getting rich | CNN Business,Global_Markets,CNN,2026-08-06T07:00:29Z,neutral,0.7699,^NSEI,NIFTY 50 Index,Index,topic_macro
 310,"South Korea’s Kospi tumbles 5% after 2-day rally, angry retail investors vow not to invest again",Global_Markets,The Times of India,2026-08-06T03:49:37Z,negative,0.9654,^NSEI,NIFTY 50 Index,Index,topic_macro
 311,Global investors dump $13 billion in South Korean stocks but keep buying chipmakers,Global_Markets,Crypto Briefing,2026-08-03T06:52:10Z,neutral,0.4933,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -943,7 +943,7 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 313,Peter Lynch does not like the AI trade; here's why he says 'Know what you own',Global_Markets,The Times of India,2026-08-01T04:49:29Z,neutral,0.8729,^NSEI,NIFTY 50 Index,Index,topic_macro
 314,Explained: Why Kospi skyrocketed 18% today after massive selloff and what’s ahead for South Korea’s 'bipolar' stock market,Global_Markets,The Times of India,2026-07-31T08:05:59Z,negative,0.5507,^NSEI,NIFTY 50 Index,Index,topic_macro
 315,"The ministers’ quiet holidays (K.M.’s “I am not reshuffling the cabinet”), Nikos A., Alexis and the oligarch sponsors (well, what on earth is this?), “Ms Gratsia, here”",Global_Markets,Protothema.gr,2026-07-31T07:08:17Z,neutral,0.9165,^NSEI,NIFTY 50 Index,Index,topic_macro
-316,South Korea’s Kospi rockets 17% after massive 3-day selloff. What’s behind the surge?,Global_Markets,The Times of India,2026-07-31T02:23:03Z,neutral,0.6698,^NSEI,NIFTY 50 Index,Index,topic_macro
+316,South Korea’s Kospi rockets 17% after massive 3-day selloff. What’s behind the surge?,Global_Markets,The Times of India,2026-07-31T02:23:03Z,positive,0.6698,^NSEI,NIFTY 50 Index,Index,topic_macro
 317,‘No turning back’: Spitznagel predicts the biggest market crash since 1929. How to prepare your portfolio if he’s right,Global_Markets,Yahoo Entertainment,2026-07-30T11:05:00Z,neutral,0.9033,^NSEI,NIFTY 50 Index,Index,topic_macro
 318,'Wait till payback time!': South Korean retail investors protest as govt apologises after Kospi crashes 40% in a month,Global_Markets,The Times of India,2026-07-30T10:29:00Z,negative,0.9674,^NSEI,NIFTY 50 Index,Index,topic_macro
 319,Odyssey of stock market: What investors can learn from the Greek epic hero’s journey back home?,Global_Markets,The Times of India,2026-07-30T04:08:03Z,neutral,0.9141,^NSEI,NIFTY 50 Index,Index,topic_macro
@@ -968,7 +968,90 @@ article_id,headline,topic,source,published_at,sentiment_label,sentiment_confiden
 338,"Nasdaq Climbs Above 26,200 as ASML's Bullish AI Forecast and Cooling Inflation Data Lift Chip Stocks Higher",Global_Markets,Ibtimes.com.au,2026-07-15T15:16:07Z,positive,0.7702,^NSEI,NIFTY 50 Index,Index,topic_macro
 339,AI Bubble Could Burst Soon? Apollo's Torsten Slok Warns S&P 500 at Risk,Global_Markets,Thenews46.com,2026-07-15T11:42:56Z,neutral,0.5766,^NSEI,NIFTY 50 Index,Index,topic_macro
 340,Explained: Why SK Hynix ADR premiums soared 50% over South Korean shares and how this reminds market of dotcom bubble,Global_Markets,The Times of India,2026-07-15T05:35:17Z,neutral,0.6749,^NSEI,NIFTY 50 Index,Index,topic_macro
-341,"Dow Jones, Nasdaq, US Stock Market Today Updates: Check Latest Move in Futures, Dow, S&P and Nasdaq Leads as AI Chip Stocks Jump, Crude Oil Surge, Bitcoin & Lucid Crash | Why Are Stocks Up Today",Global_Markets,The Sunday Guardian,2026-07-14T21:33:18Z,neutral,0.6064,^NSEI,NIFTY 50 Index,Index,topic_macro
+341,"Dow Jones, Nasdaq, US Stock Market Today Updates: Check Latest Move in Futures, Dow, S&P and Nasdaq Leads as AI Chip Stocks Jump, Crude Oil Surge, Bitcoin & Lucid Crash | Why Are Stocks Up Today",Global_Markets,The Sunday Guardian,2026-07-14T21:33:18Z,positive,0.6064,^NSEI,NIFTY 50 Index,Index,topic_macro
 342,"South Korea's Kospi crashes 5% again, plunges 31% in one month. Is the AI frenzy over?",Global_Markets,The Times of India,2026-07-14T04:31:26Z,negative,0.9445,^NSEI,NIFTY 50 Index,Index,topic_macro
 343,TCS dividend alert! Last day to buy IT bellwether's stocks for interim dividend worth Rs 12/share. Do you own?,Global_Markets,The Times of India,2026-07-14T02:23:55Z,neutral,0.9298,TCS.NS,TCS,IT,company_name
 343,TCS dividend alert! Last day to buy IT bellwether's stocks for interim dividend worth Rs 12/share. Do you own?,Global_Markets,The Times of India,2026-07-14T02:23:55Z,neutral,0.9298,^NSEI,NIFTY 50 Index,Index,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,SBIN.NS,SBI,Banking,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,AXISBANK.NS,Axis Bank,Banking,topic_macro
+344,"India July inflation accelerates to 4.45%, unlikely to alter RBI rate outlook",RBI,Yahoo Entertainment,2026-08-12T10:47:29Z,positive,0.8855,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,SBIN.NS,SBI,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,AXISBANK.NS,Axis Bank,Banking,topic_macro
+345,FCNR inflows may push FY27 loan growth to 16%; weaker-liability banks to benefit: Report,RBI,BusinessLine,2026-08-12T09:30:09Z,positive,0.9513,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,SBIN.NS,SBI,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,AXISBANK.NS,Axis Bank,Banking,topic_macro
+346,"Canara Bank, Bank of Baroda increase lending rates: Why loan EMIs for these borrowers may rise after hikes",RBI,The Times of India,2026-08-12T06:42:29Z,positive,0.7518,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,HDFCBANK.NS,HDFC Bank,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,ICICIBANK.NS,ICICI Bank,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,SBIN.NS,SBI,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,KOTAKBANK.NS,Kotak Bank,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,AXISBANK.NS,Axis Bank,Banking,topic_macro
+347,Why the RBI can’t afford cheap money,RBI,BusinessLine,2026-08-11T11:54:41Z,neutral,0.812,INDUSINDBK.NS,IndusInd Bank,Banking,topic_macro
+348,"Chandra’s exit, crude surge drag markets",NIFTY,BusinessLine,2026-08-12T14:05:33Z,negative,0.825,^NSEI,NIFTY 50 Index,Index,topic_macro
+349,"Nifty slips below 24,450 as Tata selloff weighs on benchmarks",NIFTY,Business Standard,2026-08-12T12:01:11Z,negative,0.9352,^NSEI,NIFTY 50 Index,Index,topic_macro
+350,"Embassy REIT set to enter Nifty 500, Nifty Midcap 150 from September 30",NIFTY,Business Standard,2026-08-12T11:46:27Z,neutral,0.6764,^NSEI,NIFTY 50 Index,Index,topic_macro
+351,"Sensex today | Stock Market Highlights: Sensex slips 187 pts to close at 77,966, Nifty ends at 24,435; TCS, M&M top losers",NIFTY,BusinessLine,2026-08-12T11:36:21Z,negative,0.9609,TCS.NS,TCS,IT,company_name
+351,"Sensex today | Stock Market Highlights: Sensex slips 187 pts to close at 77,966, Nifty ends at 24,435; TCS, M&M top losers",NIFTY,BusinessLine,2026-08-12T11:36:21Z,negative,0.9609,^NSEI,NIFTY 50 Index,Index,topic_macro
+352,"Nifty settles below 24,450 level; IT shares tumble",NIFTY,Business Standard,2026-08-12T10:57:51Z,negative,0.5886,^NSEI,NIFTY 50 Index,Index,topic_macro
+353,Nifty India FPI 150: How the new NSE index tracks foreign investibility,NIFTY,Business Standard,2026-08-12T10:11:20Z,neutral,0.9197,^NSEI,NIFTY 50 Index,Index,topic_macro
+354,Sensex vs KOSPI: Does India’s sector diversity offer an edge over South Korea’s chip-heavy index?,NIFTY,Livemint,2026-08-12T10:10:08Z,positive,0.8736,^NSEI,NIFTY 50 Index,Index,topic_macro
+355,"Nifty trades below 24,300 level; FMCG shares underpressure",NIFTY,Business Standard,2026-08-12T09:20:24Z,negative,0.8253,^NSEI,NIFTY 50 Index,Index,topic_macro
+356,"4 Tata group stocks jump over 1,000% under Chandra's term; full list here",NIFTY,Business Standard,2026-08-12T09:14:04Z,positive,0.8128,^NSEI,NIFTY 50 Index,Index,topic_macro
+357,N Chandrasekaran era delivered 3.3X market cap growth. Can Tata stocks keep winning after his exit?,NIFTY,The Times of India,2026-08-12T08:58:14Z,neutral,0.7063,^NSEI,NIFTY 50 Index,Index,topic_macro
+358,"Why is the market falling today? Sensex falls over 550 points, Nifty below 24,300: Key factors",NIFTY,The Times of India,2026-08-12T08:27:21Z,negative,0.5159,^NSEI,NIFTY 50 Index,Index,topic_macro
+359,"Sensex, Nifty trade lower ahead of CPI data; European mrkt decline",NIFTY,Business Standard,2026-08-12T08:22:12Z,negative,0.6152,^NSEI,NIFTY 50 Index,Index,topic_macro
+360,Sensex tumbles 614 pts; relaty shares decline,NIFTY,Business Standard,2026-08-12T07:21:19Z,negative,0.9587,^NSEI,NIFTY 50 Index,Index,topic_macro
+361,"Nifty PSU Bank index surges 2% in weak market; PNB, UBI gain up to 5%",NIFTY,Business Standard,2026-08-12T06:44:47Z,positive,0.9114,^NSEI,NIFTY 50 Index,Index,topic_macro
+362,"Sensex, Nifty under pressure; consumer durables shares drop",NIFTY,Business Standard,2026-08-12T06:20:41Z,negative,0.9606,^NSEI,NIFTY 50 Index,Index,topic_macro
+363,"Nifty drops below 24,400 level; IT shares slump",NIFTY,Business Standard,2026-08-12T05:22:51Z,negative,0.93,^NSEI,NIFTY 50 Index,Index,topic_macro
+364,Indices edge lower in early trade; breadth positive,NIFTY,Business Standard,2026-08-12T04:20:07Z,negative,0.9655,^NSEI,NIFTY 50 Index,Index,topic_macro
+365,"ETMarkets Smart Talk | India is ‘pricey’, not expensive: Mark Zuckerberg’s Harvard classmate Vikas Pershad on investing",NIFTY,The Times of India,2026-08-12T02:22:51Z,neutral,0.8241,^NSEI,NIFTY 50 Index,Index,topic_macro
+366,US sells euros to stabilize yen in first coordinated intervention with Japan in over a decade,US_Fed,Crypto Briefing,2026-08-12T13:45:41Z,positive,0.8989,^NSEI,NIFTY 50 Index,Index,topic_macro
+367,Bond Traders Keep Cointoss Wager on September Fed Hike Post-CPI,US_Fed,Financial Post,2026-08-12T13:25:38Z,negative,0.4124,^NSEI,NIFTY 50 Index,Index,topic_macro
+368,"Inflation Cooled Last Month As Gas Prices Fell, Though Costs Remain Elevated",US_Fed,HuffPost,2026-08-12T12:52:36Z,positive,0.8316,^NSEI,NIFTY 50 Index,Index,topic_macro
+369,Inflation cooled slightly last month as gas prices fell,US_Fed,Spectrum News,2026-08-12T12:45:00Z,positive,0.9008,^NSEI,NIFTY 50 Index,Index,topic_macro
+370,US inflation cooled again but still outpaced paychecks in July,US_Fed,USA Today,2026-08-12T12:38:12Z,positive,0.86,^NSEI,NIFTY 50 Index,Index,topic_macro
+371,David Crowley wins tight Wisconsin race and Iran plot led to Trump’s plane swap: Morning Rundown,US_Fed,NBC News,2026-08-12T11:02:32Z,negative,0.487,^NSEI,NIFTY 50 Index,Index,topic_macro
+372,AI’s costly buildout complicates the Fed’s inflation fight,US_Fed,CNBC,2026-08-12T11:00:01Z,negative,0.8857,^NSEI,NIFTY 50 Index,Index,topic_macro
+373,"Best CD rates today, Wednesday, August 12, 2026: Earn up to 4.30% APY",US_Fed,Yahoo Entertainment,2026-08-12T10:00:00Z,positive,0.8306,^NSEI,NIFTY 50 Index,Index,topic_macro
+374,July inflation report to provide crucial signs of where prices are headed,US_Fed,Abcnews.com,2026-08-12T09:18:09Z,neutral,0.7586,^NSEI,NIFTY 50 Index,Index,topic_macro
+375,Inflation in focus as wage growth slows for workers,US_Fed,NBC News,2026-08-12T09:00:00Z,negative,0.9374,^NSEI,NIFTY 50 Index,Index,topic_macro
+376,"Nikkei Stalls Near 67,000 as Oil and Yen Risks Offset Financial Gains",US_Fed,Newsonjapan.com,2026-08-12T06:46:55Z,negative,0.9311,^NSEI,NIFTY 50 Index,Index,topic_macro
+377,"‘I unexpectedly came into some money’: Is putting $20,000 into CDs a smart move?",US_Fed,MarketWatch,2026-08-11T22:30:00Z,neutral,0.8959,^NSEI,NIFTY 50 Index,Index,topic_macro
+378,Franco-Nevada Reports Q2 2026 Results,US_Fed,PRNewswire,2026-08-11T21:30:00Z,neutral,0.8257,^NSEI,NIFTY 50 Index,Index,topic_macro
+379,Fed’s Hammack says multiple rate hikes may be needed to tame inflation,US_Fed,Fox Business,2026-08-11T19:58:37Z,negative,0.6183,^NSEI,NIFTY 50 Index,Index,topic_macro
+380,An inflation report Wednesday should be a big deal for the Fed. Here's what to expect,US_Fed,CNBC,2026-08-11T18:34:41Z,neutral,0.9142,^NSEI,NIFTY 50 Index,Index,topic_macro
+381,JD.com Shares Fall 3% In Hong Kong As Broader Tech Selloff Deepens Ahead Of Q2 Earnings Report,US_Fed,Ibtimes.com.au,2026-08-11T15:00:14Z,negative,0.9688,^NSEI,NIFTY 50 Index,Index,topic_macro
+382,Fed to maintain wait-and-see approach on interest rates: Nuveen strategist,US_Fed,Crypto Briefing,2026-08-11T12:01:26Z,neutral,0.9075,^NSEI,NIFTY 50 Index,Index,topic_macro
+383,Gold Miners Rally as Bullion Roars Back to Life. Here's How Investors Can Cash In.,US_Fed,Barchart.com,2026-08-11T11:30:02Z,positive,0.908,^NSEI,NIFTY 50 Index,Index,topic_macro
+384,"Trust, but hedge: Quietly violent summer lingers as bulls buy crash protection",Global_Markets,CNBC,2026-08-12T13:59:17Z,neutral,0.707,^NSEI,NIFTY 50 Index,Index,topic_macro
+385,"Kospi Soars 4.5% Past 6,600, Triggering Trading Halt As Chip Stocks Surge On Record Export Data",Global_Markets,Ibtimes.com.au,2026-08-12T08:09:00Z,negative,0.9481,^NSEI,NIFTY 50 Index,Index,topic_macro
+386,The hidden AI stock trap in your portfolio — what to buy instead,Global_Markets,TheStreet,2026-08-11T22:41:53Z,neutral,0.916,^NSEI,NIFTY 50 Index,Index,topic_macro
+387,"Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon",NIFTY,The Times of India,2026-08-13T00:30:00Z,neutral,0.9305,APOLLOHOSP.NS,Apollo Hospitals,Pharma,company_name
+387,"Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon",NIFTY,The Times of India,2026-08-13T00:30:00Z,neutral,0.9305,ULTRACEMCO.NS,UltraTech Cement,Materials,company_name
+387,"Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon",NIFTY,The Times of India,2026-08-13T00:30:00Z,neutral,0.9305,TMPV.NS,Tata Motors,Auto,company_name
+387,"Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon",NIFTY,The Times of India,2026-08-13T00:30:00Z,neutral,0.9305,AXISBANK.NS,Axis Bank,Banking,company_name
+387,"Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon",NIFTY,The Times of India,2026-08-13T00:30:00Z,neutral,0.9305,^NSEI,NIFTY 50 Index,Index,topic_macro
+388,Tata Group shares slide up to 4% as Chandrasekaran opts out of reappointment,NIFTY,The Times of India,2026-08-12T19:23:25Z,negative,0.9636,^NSEI,NIFTY 50 Index,Index,topic_macro
+389,"Chandra’s exit announcement wipes off ₹45,000 crore market cap from Tata stocks in a day",NIFTY,BusinessLine,2026-08-12T15:19:44Z,negative,0.9572,^NSEI,NIFTY 50 Index,Index,topic_macro
+390,The AI threat to India’s IT jobs machine,Indian_IT,Financial Post,2026-08-12T14:31:03Z,negative,0.6265,TCS.NS,TCS,IT,topic_macro
+390,The AI threat to India’s IT jobs machine,Indian_IT,Financial Post,2026-08-12T14:31:03Z,negative,0.6265,INFY.NS,Infosys,IT,topic_macro
+390,The AI threat to India’s IT jobs machine,Indian_IT,Financial Post,2026-08-12T14:31:03Z,negative,0.6265,WIPRO.NS,Wipro,IT,topic_macro
+390,The AI threat to India’s IT jobs machine,Indian_IT,Financial Post,2026-08-12T14:31:03Z,negative,0.6265,HCLTECH.NS,HCL Tech,IT,topic_macro
+390,The AI threat to India’s IT jobs machine,Indian_IT,Financial Post,2026-08-12T14:31:03Z,negative,0.6265,TECHM.NS,Tech Mahindra,IT,topic_macro
+391,GIFT Nifty indicates mildly green start for equities as US inflation remains benign,US_Fed,Business Standard,2026-08-13T03:34:02Z,positive,0.8095,^NSEI,NIFTY 50 Index,Index,topic_macro
+392,"'Good News': July Inflation Report Trend Earns Cheers From Financial Markets Analyst, White House",US_Fed,Freerepublic.com,2026-08-13T03:08:45Z,positive,0.9359,^NSEI,NIFTY 50 Index,Index,topic_macro
+393,When Will AI Take My Job?,US_Fed,Whenwillaitakemyjob.ai,2026-08-13T02:47:22Z,neutral,0.8769,^NSEI,NIFTY 50 Index,Index,topic_macro
+394,Fed likely to hold rates as market lowers September hike odds,US_Fed,Crypto Briefing,2026-08-13T00:56:56Z,neutral,0.5049,^NSEI,NIFTY 50 Index,Index,topic_macro
+395,US Fed expected to leave rates unchanged next month after soft inflation data,US_Fed,The Times of India,2026-08-12T18:51:32Z,negative,0.8399,^NSEI,NIFTY 50 Index,Index,topic_macro
+396,"July US CPI eases to 3.4%, keeping Fed September rate decision in focus",US_Fed,BusinessLine,2026-08-12T18:00:54Z,positive,0.5446,^NSEI,NIFTY 50 Index,Index,topic_macro
+397,"Bitcoin Steadies Near $64,000 As Traders Await July CPI Data For Key Federal Reserve Rate Signals",US_Fed,Ibtimes.com.au,2026-08-12T14:20:52Z,negative,0.699,^NSEI,NIFTY 50 Index,Index,topic_macro

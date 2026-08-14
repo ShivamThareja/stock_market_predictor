@@ -6,9 +6,12 @@
 |---|---|
 | `setup.py` | Run once — installs `torch`, `transformers`, `scikit-learn`, `pandas` |
 | `week4_finbert.py` | Validates FinBERT against your hand-labels, then auto-labels Week 3's database |
-| `week4_finetune.py` | Fine-tunes FinBERT's classification head on your corrected labels |
+| `week4_finetune.py` | Fine-tunes FinBERT's classification head on your corrected labels (69 examples) |
+| `week4_label_rules.py` | Targeted rule-based corrections for known FinBERT failure patterns (rate hold/hike/cut, market rally/fall words) |
+| `week4_finetune_v2.py` | Retries fine-tuning once the DB crossed 200+ examples — see "Round 2" below |
 | `week4_validation_disagreements.csv` | Headlines where FinBERT and your labels disagree, for review |
-| `finetuned_finbert/` | Saved fine-tuned model (not currently used in production — see below) |
+| `week4_label_rules_changes.csv` | Every headline `week4_label_rules.py` changed, and which rule fired |
+| `finetuned_finbert/`, `finetuned_finbert_v2/` | Saved fine-tuned models (neither currently used in production — see below) |
 
 ## What changed from Week 2/3
 
@@ -67,13 +70,52 @@ one to close the gap at this sample size. None of the 4 configs beat
 zero-shot, confirming this is genuinely a data ceiling, not a tuning
 problem.
 
+## Round 2: rule-based corrections + fine-tuning retry at 386 examples
+
+Once the DB crossed 200+ labeled headlines, two follow-ups:
+
+**`week4_label_rules.py`** — rather than re-running fine-tuning blind,
+first added targeted corrections for patterns FinBERT gets wrong in a
+predictable direction: RBI/Fed rate **hold** headlines it calls negative
+(should be neutral-at-worst), **hike** headlines it calls positive
+(should lean negative), **cut** headlines it calls negative (should lean
+positive), and market rally/fall verbs on headlines it left neutral.
+Each rule is gated on FinBERT's *current* call, not a blind keyword
+override — an early draft that blanket-relabeled any headline containing
+"rally" broke immediately on "Profit-taking... stall India bond rally"
+(bearish, despite the word). 24 of 386 headlines got corrected this way.
+Original FinBERT output is preserved in `sentiment_label_finbert` for
+audit — nothing here is destructive.
+
+**`week4_finetune_v2.py`** — retried fine-tuning, but NOT by just
+pointing the original script at more rows. 386 of those labels are
+FinBERT's own output (plus the 24 rule corrections) — fine-tuning
+against its own prior output and validating on a slice of that same
+pool would be circular, guaranteed to look good without proving
+anything. Instead: trained on the 317 DB examples that are NOT also in
+Week 2's 69 hand-labeled set (confirmed zero overlap by construction),
+then evaluated ONLY against those untouched 69 human labels — the same
+independent ground truth zero-shot was scored against.
+
+**Result: 69.6%, exactly tying zero-shot.** More data plus rule
+corrections did not move the needle on genuinely human-judged accuracy.
+Kept zero-shot FinBERT + `week4_label_rules.py`'s corrections as
+production labeling; `finetuned_finbert_v2/` is saved but unused, same
+as the original fine-tune. This is a real, honest negative result, not
+a bug — worth knowing the ceiling is elsewhere before spending more time
+here.
+
 ## Next: accumulate more data, then retry
 
-The real lever left isn't more clever techniques on this dataset — it's a
-bigger dataset. Let `phase0_week3/week3_pipeline.py` run for a while,
-label a larger batch (aim for 200+), then re-run `week4_finetune.py`.
-Fine-tuning tends to actually help once there's enough data for the model
-to learn a real pattern instead of memorizing noise.
+Fine-tuning has now been tried at 69 and at ~300 examples, tied or lost
+to zero-shot both times. The remaining disagreements look genuinely
+ambiguous (mixed-signal headlines), which is consistent with this being
+close to FinBERT's real ceiling on this task rather than a data-size
+problem anymore. If you want to push further, the highest-leverage next
+step is probably more/better human labels (a larger, more careful Week 2
+round) rather than another fine-tuning attempt on the same labeling
+process — fine-tuning can't exceed the quality of what it's trained to
+imitate.
 
 ## Labeling convention established this week
 

@@ -59,6 +59,7 @@ warnings.filterwarnings("ignore")
 ROUTED_EVENTS_CSV = Path("../phase2_routing/phase2_routed_events.csv")
 PRICES_CSV = Path("../phase1_expansion/phase1_close_prices_all.csv")
 SECTOR_MAP_CSV = Path("../phase1_expansion/phase1_sector_map.csv")
+MACRO_CSV = Path("../phase1_expansion/phase1_macro_data.csv")
 
 TEST_FRACTION = 0.2           # most recent slice of days held out for testing
 MIN_ROWS_TO_TRAIN = 40        # below this, a train/test split is too noisy to trust
@@ -91,6 +92,14 @@ print(f"\nLoaded {len(routed)} routed (headline, stock) rows across "
       f"{pd.to_datetime(routed['published_at']).dt.normalize().nunique()} distinct news days.")
 print(f"Loaded price history for {prices.shape[1]} tickers, "
       f"{prices.index[0].date()} -> {prices.index[-1].date()}.")
+
+if MACRO_CSV.exists():
+    macro = pd.read_csv(MACRO_CSV, index_col="Date", parse_dates=True).sort_index()
+    prices = prices.join(macro, how="outer")
+    print(f"Merged macro data: {list(macro.columns)}")
+else:
+    print(f"No {MACRO_CSV} found — run phase1_expansion/phase1_macro_data.py for "
+          f"S&P 500 / crude oil / USD-INR / India VIX features (they'll default to 0 without it).")
 
 print("\nBuilding daily (ticker, date) features: sentiment aggregates, "
       "price momentum, market-wide sentiment...")

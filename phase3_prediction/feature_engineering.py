@@ -16,11 +16,25 @@ from xgboost import XGBClassifier
 
 FLAT_THRESHOLD = 0.3   # % move — below this counts as FLAT, not UP/DOWN
 
+# Market-wide series attached to EVERY ticker's row (not just that
+# ticker's own price history) — the "overnight signal" / cross-
+# timezone features. Column names match phase1_macro_data.py's
+# output plus "NIFTY 50 Index" from phase1_close_prices_all.csv,
+# which is already in `prices` without any extra merge needed.
+MARKET_SERIES = {
+    "NIFTY 50 Index": "nifty_market_prior_1d_return",
+    "S&P 500": "sp500_prior_1d_return",
+    "Crude Oil": "crude_oil_prior_1d_return",
+    "USD/INR": "usdinr_prior_1d_return",
+    "India VIX": "india_vix_prior_1d_return",
+}
+
 FEATURE_COLS = [
     "n_headlines", "pct_positive", "pct_negative", "pct_neutral",
     "avg_confidence", "net_sentiment",
     "prior_1d_return", "prior_3d_return", "market_net_sentiment",
-]
+    "day_of_week",
+] + list(MARKET_SERIES.values())
 SENTIMENT_SIGN = {"positive": 1, "negative": -1, "neutral": 0}
 
 
@@ -73,12 +87,29 @@ def label_from_return(r):
     return "FLAT"
 
 
+def add_market_features(dataset, prices):
+    """Prior-1-day return for each market-wide series in MARKET_SERIES
+    (NIFTY itself, S&P 500, crude oil, USD/INR, India VIX), attached
+    to every row regardless of which ticker that row is about — plus
+    day-of-week. A series missing from `prices` (e.g. macro data was
+    never fetched, or yfinance failed on one ticker) just contributes
+    an all-zero column rather than breaking the whole build."""
+    for series_name, col in MARKET_SERIES.items():
+        if series_name in prices.columns:
+            mom = dataset["date"].apply(lambda d: momentum_features(prices, series_name, d))
+            dataset[col] = mom["prior_1d_return"].fillna(0.0)
+        else:
+            dataset[col] = 0.0
+    dataset["day_of_week"] = dataset["date"].dt.dayofweek
+    return dataset
+
+
 def build_dataset(routed, prices, sector_map):
     """
     Turn Phase 2's headline-level routed events into one row per
     (ticker, date): sentiment aggregates + price momentum + market-
-    wide sentiment + (if resolvable) the real next-session return
-    and UP/DOWN/FLAT label.
+    wide sentiment/macro signals + (if resolvable) the real next-
+    session return and UP/DOWN/FLAT label.
 
     Rows where the next session hasn't closed yet keep label=None /
     next_session_return=NaN rather than being dropped — the training
@@ -131,6 +162,8 @@ def build_dataset(routed, prices, sector_map):
     dataset["market_net_sentiment"] = dataset["market_net_sentiment"].fillna(0.0)
     dataset["prior_1d_return"] = dataset["prior_1d_return"].fillna(0.0)
     dataset["prior_3d_return"] = dataset["prior_3d_return"].fillna(0.0)
+
+    dataset = add_market_features(dataset, prices)
 
     return dataset
 

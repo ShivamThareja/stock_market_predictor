@@ -1,0 +1,65 @@
+{
+  "last_retrain_headline_count": 397,
+  "last_retrain_at": "2026-08-14T09:20:34.283097",
+  "last_retrain_accuracy": 0.45652173913043476,
+  "cumulative_weight_drift": 0.0,
+  "retrain_history": [
+    {
+      "at": "2026-08-14T09:19:07.545059",
+      "trigger": "397 new labeled headlines since last training",
+      "old_accuracy": null,
+      "new_accuracy": 0.45652173913043476,
+      "signal_weights": {
+        "sentiment": 1.0,
+        "headline_volume": 1.0,
+        "stock_momentum": 1.0,
+        "market_sentiment": 1.0,
+        "nifty_momentum": 1.0,
+        "sp500": 1.0,
+        "crude_oil": 1.0,
+        "usdinr": 1.0,
+        "india_vix": 1.0,
+        "day_of_week": 1.0
+      },
+      "n_rows": 244
+    },
+    {
+      "at": "2026-08-14T09:19:58.481433",
+      "trigger": "153 new labeled headlines since last training",
+      "old_accuracy": 0.45652173913043476,
+      "new_accuracy": 0.45652173913043476,
+      "signal_weights": {
+        "sentiment": 1.0,
+        "headline_volume": 1.0,
+        "stock_momentum": 1.0,
+        "market_sentiment": 1.0,
+        "nifty_momentum": 1.0,
+        "sp500": 1.0,
+        "crude_oil": 1.0,
+        "usdinr": 1.0,
+        "india_vix": 1.0,
+        "day_of_week": 1.0
+      },
+      "n_rows": 244
+    },
+    {
+      "at": "2026-08-14T09:20:34.283565",
+      "trigger": "153 new labeled headlines since last training",
+      "old_accuracy": 0.45652173913043476,
+      "new_accuracy": 0.45652173913043476,
+      "signal_weights": {
+        "sentiment": 1.0,
+        "headline_volume": 1.0,
+        "stock_momentum": 1.0,
+        "market_sentiment": 1.0,
+        "nifty_momentum": 1.0,
+        "sp500": 1.0,
+        "crude_oil": 1.0,
+        "usdinr": 1.0,
+        "india_vix": 1.0,
+        "day_of_week": 1.0
+      },
+      "n_rows": 244
+    }
+  ]
+}

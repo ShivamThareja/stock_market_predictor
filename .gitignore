@@ -9,8 +9,20 @@ config.py
 .env
 .DS_Store
 Thumbs.db
-.claude/settings.local.json
+.claude/
 
-# 419MB fine-tuned FinBERT checkpoint — documented as not used in
+# 419MB fine-tuned FinBERT checkpoints — documented as not used in
 # production (see phase0_week4/README.md); too large for git anyway
 phase0_week4/finetuned_finbert/
+phase0_week4/finetuned_finbert_v2/
+
+# Stray empty DB, not part of the pipeline's actual output
+phase0_week3/news.db
+
+# Personal file, not project content — do not publish
+Shivam_Thareja.pdf
+
+# Phase 4 runtime artifacts — regenerable, not project source
+phase4_learning/model_state.pkl
+phase4_learning/logs/
+phase4_learning/scheduler.pid

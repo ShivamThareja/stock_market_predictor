@@ -10,46 +10,41 @@ A complete, end-to-end financial intelligence system that reads news from around
 
 | Metric | Value |
 |---|---|
-| Headlines collected | 343 labeled headlines |
-| Stock-news pairs routed | 973 (headline, stock) pairs |
+| Headlines collected | 386 labeled headlines |
+| Stock-news pairs routed | 1,037 (headline, stock) pairs |
 | Tickers tracked | 56 (all NIFTY50 + sector indices) |
-| Model accuracy | 42.2% (+8.9pts above 33.3% random baseline) |
-| Training data | ~28 trading days (accuracy improves as pipeline runs longer) |
+| Model accuracy | 43.5% (+10.9pts above 32.6% random baseline) |
+| Training data | ~29 trading days (accuracy improves as pipeline runs longer) |
 
-> **Honest note on accuracy:** 42.2% on 28 days of data is a proof of concept, not a finished result. The pipeline runs hourly — as it accumulates more real trading days across varied market conditions (crashes, rallies, RBI surprises), the model retrains and accuracy improves passively. Renaissance Technologies achieves ~66% after 30 years. We're being honest about where we are.
+> **Honest note on accuracy:** 43.5% on 29 days of data is a proof of concept, not a finished result. A round of real improvement work — rule-based sentiment corrections, 5 new macro features (S&P 500, crude oil, USD/INR, India VIX, day-of-week), and a FinBERT fine-tuning attempt — moved this from an earlier 42.2% baseline by just over a point, which is itself the finding: more data (accumulated over time, not engineered around) is what's actually left to move this number meaningfully. Full writeup in `phase3_prediction/README.md` and `phase0_week4/README.md`, including the fine-tuning attempt that honestly did NOT beat zero-shot FinBERT.
 
 ---
 
 ## What it does
 
 ```
-Global News (24/7)
+Global News
        ↓
-week3_pipeline.py     — fetches headlines every hour from 8+ sources
+week3_pipeline.py     — fetches headlines hourly across 6 topic queries (NewsAPI)
        ↓
 week4_finbert.py      — FinBERT AI labels each headline: positive / negative / neutral
+week4_label_rules.py  — targeted corrections for known FinBERT failure patterns
        ↓
-phase2_routing.py     — maps each headline to affected NIFTY50 stocks and sectors
+phase2_news_routing.py — maps each headline to affected NIFTY50 stocks and sectors
        ↓
-phase3_xgboost.py     — XGBoost model predicts: UP / DOWN / FLAT for next session
+phase3_xgboost_model.py — XGBoost model predicts: UP / DOWN / FLAT for next session
        ↓
 Streamlit Dashboard   — live view of pipeline, NIFTY chart, model accuracy
 ```
 
 ---
 
-## Data sources (8+ active)
+## Data sources
 
 | Source | What it provides |
 |---|---|
-| NewsAPI.org | 1,000 req/day, broad global financial news |
-| Bloomberg RSS | Free premium headlines — most market-moving |
-| Reuters RSS | Breaking global financial news |
-| Economic Times RSS | India-specific market news |
-| RBI RSS | Direct repo rate decisions — faster than any news article |
-| Mint RSS | Indian business news |
-| yfinance | 10 years of NSE/BSE/global price data |
-| GDELT (Phase 2) | Historical news archive, 65 languages |
+| NewsAPI.org | Global financial news across 6 topic queries (RBI, NIFTY, Indian Banking, Indian IT, US Fed, Global Markets) |
+| yfinance | 10 years of NSE/BSE price data (56 NIFTY50 tickers + sector indices), plus S&P 500, crude oil, USD/INR, India VIX |
 
 ---
 
@@ -57,14 +52,14 @@ Streamlit Dashboard   — live view of pipeline, NIFTY chart, model accuracy
 
 | Layer | Technology |
 |---|---|
-| Data collection | `yfinance`, `NewsAPI`, `feedparser`, `requests` |
-| Scheduling | `APScheduler` — runs hourly, 24/7 |
-| Storage | `SQLite` — all headlines, prices, predictions |
-| NLP / Sentiment | `FinBERT` (ProsusAI/finbert) via HuggingFace Transformers |
-| Entity extraction | `spaCy` — identifies which company/sector is mentioned |
+| Data collection | `yfinance`, `NewsAPI`, `requests` |
+| Scheduling | `APScheduler` (manual/scheduler mode) + `cron` for hands-off hourly runs |
+| Storage | `SQLite` — headlines + sentiment; prices/routing/model outputs as CSV |
+| NLP / Sentiment | `FinBERT` (ProsusAI/finbert) via HuggingFace Transformers, plus targeted rule-based corrections |
+| Entity/sector matching | Word-boundary regex over the NIFTY50 name list (`phase2_news_routing.py`) |
 | ML prediction | `XGBoost` — gradient boosted trees |
-| Dashboard | `Streamlit` |
-| Language | Python 3.12 |
+| Dashboard | `Streamlit` + `Plotly` |
+| Language | Python 3.9 |
 
 ---
 
@@ -74,7 +69,7 @@ Streamlit Dashboard   — live view of pipeline, NIFTY chart, model accuracy
 stock_market_predictor/
 ├── phase0_week1/          # Stock data exploration — 10yr NIFTY50 data, OHLCV, correlations
 ├── phase0_week2/          # News fetching — NewsAPI integration, manual sentiment labeling
-├── phase0_week3/          # Automated pipeline — APScheduler, SQLite, multi-source RSS
+├── phase0_week3/          # Automated pipeline — APScheduler, SQLite, NewsAPI
 ├── phase0_week4/          # FinBERT sentiment — AI labeling, validation vs human labels
 ├── phase1_expansion/      # All 56 NIFTY50 tickers + sector indices across 10 sectors
 ├── phase2_routing/        # News → sector → stock automatic mapping
@@ -99,12 +94,12 @@ source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Add your NewsAPI key
-cp phase0_week2/config_template.py phase0_week2/config.py
+# Add your NewsAPI key (week3_pipeline.py reads phase0_week3/config.py specifically)
+cp phase0_week3/config_template.py phase0_week3/config.py
 # Edit config.py and add your key from newsapi.org
 
 # Run the pipeline (fetches latest news)
-python3 phase0_week3/week3_pipeline.py --once
+cd phase0_week3 && python3 week3_pipeline.py --once && cd ..
 
 # Run the dashboard
 cd final_dashboard
@@ -122,7 +117,7 @@ streamlit run dashboard.py
 | ±0.5% noise threshold for ML training | Moves below ±0.5% are random noise — from LSTM paper findings |
 | 2015 as ML training start | Pre-2015 Indian market had different structure — less FII, weaker global correlation |
 | XGBoost over LSTM | Outperforms deep learning on small tabular datasets — industry standard in quant finance |
-| Honest accuracy reporting | 42.2% on limited data documented transparently — overfitting to fake 90% is worse |
+| Honest accuracy reporting | 43.5% on limited data documented transparently, including a fine-tuning attempt that didn't beat baseline — overfitting to fake 90% is worse |
 
 ---
 
@@ -130,21 +125,27 @@ streamlit run dashboard.py
 
 Most existing financial NLP projects:
 - Cover US markets only — this covers NSE/NIFTY50 specifically
-- Use a single news source — this aggregates 8+ sources
-- Are research papers, not deployable tools — this runs locally with one command
-- Ignore cross-timezone effects — this is built around the US close → India open signal
+- Are research papers, not deployable tools — this runs locally with one command (and has a live dashboard)
+- Ignore cross-timezone effects — this is built around the US close → India open signal (S&P 500 prior-day return is a direct model feature, not just a news topic)
 
 ---
 
 ## Roadmap / what's next
 
 - [ ] Deploy dashboard to Streamlit Cloud (public URL)
-- [ ] Cron job for fully automated 24/7 data collection
-- [ ] Fine-tune FinBERT on 200+ labeled examples (currently 343 collected, labeling in progress)
-- [ ] Cross-timezone prediction: US/Europe overnight news → NSE open direction
+- [ ] Cron job for fully automated hourly data collection (command ready — see below; needs to be run once from a real terminal, not this sandboxed one)
+- [x] Fine-tune FinBERT on 200+ labeled examples — done at 386; honestly tied zero-shot (69.6%) rather than beating it, see `phase0_week4/README.md`
+- [x] Macro/cross-timezone features: S&P 500, crude oil, USD/INR, India VIX prior-day change as direct model inputs
 - [ ] Sector-level models (separate XGBoost per sector)
 - [ ] LangChain RAG layer for natural language "why did this stock move?" explanations
 - [ ] Knowledge graph of NIFTY50 company relationships for contagion detection
+
+To start the automated hourly pipeline yourself:
+```bash
+crontab -e
+# add:
+7 * * * * cd /path/to/stock_market_predictor-main/phase0_week3 && /path/to/stock_market_predictor-main/venv/bin/python3 week3_pipeline.py --once >> ~/pipeline.log 2>&1
+```
 
 ---
 

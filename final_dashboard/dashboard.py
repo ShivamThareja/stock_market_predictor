@@ -42,6 +42,7 @@ from feature_engineering import FEATURE_COLS, build_dataset, fit_encoders, make_
 NEWS_DB = Path(__file__).resolve().parent.parent / "phase0_week3" / "news_pipeline.db"
 ROUTED_CSV = Path(__file__).resolve().parent.parent / "phase2_routing" / "phase2_routed_events.csv"
 PRICES_CSV = Path(__file__).resolve().parent.parent / "phase1_expansion" / "phase1_close_prices_all.csv"
+MACRO_CSV = Path(__file__).resolve().parent.parent / "phase1_expansion" / "phase1_macro_data.csv"
 SECTOR_MAP_CSV = Path(__file__).resolve().parent.parent / "phase1_expansion" / "phase1_sector_map.csv"
 METRICS_CSV = PHASE3_DIR / "phase3_metrics.csv"
 IMPORTANCE_CSV = PHASE3_DIR / "phase3_feature_importance.csv"
@@ -100,7 +101,11 @@ def load_routed():
 def load_prices():
     if not PRICES_CSV.exists():
         return pd.DataFrame()
-    return pd.read_csv(PRICES_CSV, index_col="Date", parse_dates=True).sort_index()
+    prices = pd.read_csv(PRICES_CSV, index_col="Date", parse_dates=True).sort_index()
+    if MACRO_CSV.exists():
+        macro = pd.read_csv(MACRO_CSV, index_col="Date", parse_dates=True).sort_index()
+        prices = prices.join(macro, how="outer")
+    return prices
 
 
 @st.cache_data(ttl=300)
